@@ -1,2 +1,2 @@
-### Basic javascipt excercises
+### Basic javascript exercises
 ---
