@@ -12,5 +12,28 @@
 (function() {
 
     // your code here
+    const target = document.getElementById("target");
+    const table = document.createElement("table");
+    const tbody = document.createElement("tbody");
+
+
+
+    for (i =1; i<11 ; i++){
+        const row = document.createElement("tr");
+
+        for (f =1; f<11 ; f++) {
+            const cell = document.createElement("td");
+            let cellText = document.createTextNode(i*f);
+            cell.appendChild(cellText);
+            row.appendChild(cell);
+        }
+
+        tbody.appendChild(row);
+    }
+
+
+
+    table.appendChild(tbody);
+    target.appendChild(table);
 
 })();
