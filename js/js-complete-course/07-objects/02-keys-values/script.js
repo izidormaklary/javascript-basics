@@ -19,4 +19,9 @@
         status: "married",
     };
     // your code here
+    document.getElementById('run').addEventListener('click', e=>{
+        console.log(Object.keys(person))
+        console.log(Object.values(person))
+    })
+
 })();
