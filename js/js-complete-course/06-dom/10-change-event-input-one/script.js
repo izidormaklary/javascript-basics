@@ -11,6 +11,14 @@
 
 (function() {
 
-    // your code here
+    const input = document.getElementById("pass-one");
+    let counter = document.getElementById("counter")
+    input.oninput = (ev=> {
+        const input = document.getElementById("pass-one");
+        if (input.value.length > 9 ){
+            input.value = input.value.substring(0,10)
+        }
+        counter.innerText= input.value.length+"/10";
+    })
 
 })();
