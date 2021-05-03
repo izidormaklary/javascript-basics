@@ -20,12 +20,13 @@
     ];
 const next = document.getElementById("next");
 const image = document.getElementsByTagName("IMG")[0];
-    let i = 0;
+    let i = 1;
     next.addEventListener("click", ev => {
 
-        ++i;
+
         image.src = gallery[i];
-        if (i === gallery.length-1){
+        i++;
+        if (i === gallery.length){
             i = 0;
         }
     } )
