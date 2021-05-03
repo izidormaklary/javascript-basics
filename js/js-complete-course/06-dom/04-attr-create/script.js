@@ -10,7 +10,13 @@
 // You will have time to focus on it later.
 
 (function() {
+    let source = document.getElementById("source");
+    let data = source.dataset.image;
 
+    let newImage = document.createElement("IMG");
+    newImage.setAttribute("src", data);
+    document.getElementById("target").appendChild(newImage)
+    source.remove();
     // your code here
 
 })();
