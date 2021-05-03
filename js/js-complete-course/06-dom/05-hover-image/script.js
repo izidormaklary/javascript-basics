@@ -10,7 +10,19 @@
 // You will have time to focus on it later.
 
 (function() {
+    let image = document.getElementsByTagName("IMG")[0];
+    let original = image.src
+    let onhover = image.dataset.hover;
 
     // your code here
+    image.onmouseover = function() {mouseOver()};
+    image.onmouseout = function() {mouseOut()};
 
+    function mouseOver() {
+        image.src=onhover;
+    }
+
+    function mouseOut() {
+        image.src=original;
+    }
 })();

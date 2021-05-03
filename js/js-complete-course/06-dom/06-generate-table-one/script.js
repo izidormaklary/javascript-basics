@@ -10,6 +10,24 @@
 // You will have time to focus on it later.
 
 (function() {
+    const target = document.getElementById("target");
+    const table = document.createElement("table");
+    const tbody = document.createElement("tbody");
+
+
+
+    for (i =0; i<10 ; i++){
+        const row = document.createElement("tr");
+        const cell = document.createElement("td");
+        row.appendChild(cell);
+        tbody.appendChild(row);
+    }
+
+
+
+    table.appendChild(tbody);
+    target.appendChild(table);
+
 
     // your code here
 
