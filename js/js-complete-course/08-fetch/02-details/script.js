@@ -11,29 +11,35 @@
 
 (() => {
     
-    const hName = document.getElementsByClassName('name');
+   // button eventlistener
     document.getElementById("run").addEventListener("click", getXmen);
-    
+    //function that waits for the data to be fetched
     async function getXmen() {
+        //getting id from inputfield
         let heroId = document.getElementById('hero-id').value;
+        //selecting the right element from json object, and fetching it
         let data = await fetch(`http://localhost:3000/heroes?id=${heroId}`);
         let heroObj = await data.json();
+        //selecting the first element (of one element but yes)
         heroObj = heroObj[0];
+        // using the provided template with the wanted data
         createTemplate(heroObj)
           
     }
 
     function createTemplate(heroObj){
+        //get the target element
         const target = document.getElementById("target");
-        template = document.getElementById('tpl-hero').content.cloneNode(true);
+        //cloning template
+        const template = document.getElementById('tpl-hero').content.cloneNode(true);
+        //select classes from templates nodetree
         const name = template.querySelector(".name");
         const alt = template.querySelector(".alter-ego");
         let abilities =  template.querySelector(".powers");
-        target.appendChild(template);
+        //adding name, alter-ego, and powers
         name.innetText= heroObj.name;
         alt.innerText= heroObj.alterEgo;
-        
-       
+
         heroObj.abilities.forEach(element => {
           
            let br = document.createElement("br");
@@ -41,8 +47,10 @@
            
            abilities.appendChild(el);
            abilities.appendChild(br);
+           
         })
-        
+        //make the template the targets child. 
+        target.appendChild(template);
     }
 
     // your code here
