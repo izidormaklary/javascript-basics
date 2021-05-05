@@ -28,7 +28,7 @@
     }
 
     function createTemplate(heroObj){
-        //get the target element
+        //get the target element which is an ordered list
         const target = document.getElementById("target");
         //cloning template
         const template = document.getElementById('tpl-hero').content.cloneNode(true);
