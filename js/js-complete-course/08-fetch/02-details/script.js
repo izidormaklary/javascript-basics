@@ -49,7 +49,7 @@
            abilities.appendChild(br);
            
         })
-        //make the template the targets child. 
+        //make template the targets child. 
         target.appendChild(template);
     }
 
