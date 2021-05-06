@@ -10,6 +10,7 @@
 // You will have time to focus on it later.
 
 (() => {
+<<<<<<< HEAD
     
    // button eventlistener
     document.getElementById("run").addEventListener("click", getXmen);
@@ -53,5 +54,7 @@
         target.appendChild(template);
     }
 
+=======
+>>>>>>> f6a2bdfa379c68ac71fdc4a69f9485af337570b6
     // your code here
 })();

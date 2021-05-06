@@ -1,6 +1,6 @@
 /* becode/javascript
  *
- * /06-dom/10-match-password-two/script.js - 6.10: vérification de mots de passe (2)
+ * /06-dom/05-hover-image/script.js - 6.5: survol d'image
  *
  * coded by leny@BeCode
  * started at 26/10/2018

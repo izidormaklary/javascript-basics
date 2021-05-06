@@ -1,6 +1,6 @@
 /* becode/javascript
  *
- * /06-dom/10-match-password-two/script.js - 6.10: vérification de mots de passe (2)
+ * /06-dom/02-select-two/script.js - 6.2: sélection par sélecteur css
  *
  * coded by leny@BeCode
  * started at 26/10/2018
